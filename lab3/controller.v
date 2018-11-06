@@ -48,8 +48,8 @@ module controller (/*AUTOARG*/
 	output reg wb_rst,
 	output reg wb_en,
 	input wire wb_valid,
-	output reg exe_fwd_a_ctrl,
-	output reg exe_fwd_b_ctrl
+	output reg [1:0] exe_fwd_a_ctrl,
+	output reg [1:0] exe_fwd_b_ctrl
 	);
 	
 	`include "mips_define.vh"

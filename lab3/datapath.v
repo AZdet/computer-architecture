@@ -59,8 +59,8 @@ module datapath (
 	input wire wb_rst,
 	input wire wb_en,
 	output reg wb_valid,
-	input wire exe_fwd_a_ctrl,
-	input wire exe_fwd_b_ctrl
+	input wire [1:0] exe_fwd_a_ctrl,
+	input wire [1:0] exe_fwd_b_ctrl
 	);
 	
 	`include "mips_define.vh"
